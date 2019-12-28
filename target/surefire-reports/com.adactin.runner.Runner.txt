@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: com.adactin.runner.Runner
+-------------------------------------------------------------------------------
+Tests run: 40, Failures: 0, Errors: 14, Skipped: 26, Time elapsed: 7.255 s <<< FAILURE! - in com.adactin.runner.Runner
+When user enter application url(| poojapriya | test123 |)  Time elapsed: 0.063 s  <<< ERROR!
+java.lang.NullPointerException
+
+| poojapriya | test123 |  Time elapsed: 0.063 s  <<< ERROR!
+java.lang.NullPointerException
+
+When user enter application url(| anuamu041231 | 9003881823 |)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+
+| anuamu041231 | 9003881823 |  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+
+When user enter application url(| anuamu04123 | 900388183 |)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+
+| anuamu04123 | 900388183 |  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+
+When user select location(Scenario: Successfull search into the adactin application with valid credential)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+
+Scenario: Successfull search into the adactin application with valid credential  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+
+And user select select(Scenario: Successfull select into the adactin application with valid credential)  Time elapsed: 0.016 s  <<< ERROR!
+java.lang.NullPointerException
+
+Scenario: Successfull select into the adactin application with valid credential  Time elapsed: 0.016 s  <<< ERROR!
+java.lang.NullPointerException
+
+When user enter firstname(Scenario: Successfull BookHotelPage into the adactin application with valid credential)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+
+Scenario: Successfull BookHotelPage into the adactin application with valid credential  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+
+Then :user enter logoutpage(Scenario: Successfull LogoutPage into the adactin application with valid credential)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+
+Scenario: Successfull LogoutPage into the adactin application with valid credential  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+

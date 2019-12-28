@@ -5,6 +5,7 @@ import java.io.IOException;
 import com.adactinbasclass.BaseClass;
 
 import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
 public class Hooks extends BaseClass {
@@ -14,7 +15,7 @@ public class Hooks extends BaseClass {
 		System.out.println("Scenario Name:" +scenario.getName());
      
 	}
-
+	@After
 	public void afterscenario(Scenario scenario) throws IOException {
 		if (scenario.isFailed()) {
 			String id = scenario.getId();

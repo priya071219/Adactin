@@ -7,35 +7,41 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "line": 3,
+  "line": 11,
   "name": "Successfull login into the adactin application with valid credential",
   "description": "",
   "id": "login-functionality-for-adactin-application;successfull-login-into-the-adactin-application-with-valid-credential",
   "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 10,
+      "name": "@login"
+    }
+  ]
 });
 formatter.step({
-  "line": 4,
+  "line": 12,
   "name": "user enter application url",
   "keyword": "When "
 });
 formatter.step({
-  "line": 5,
-  "name": "user enter \"\u003cusername\u003e\" as username",
+  "line": 13,
+  "name": "user enter \u003cusername\u003e as a username",
   "keyword": "And "
 });
 formatter.step({
-  "line": 6,
-  "name": "user enter  \"\u003cpassword\u003e\" as password",
+  "line": 14,
+  "name": "user enter  \u003cpassword\u003e as a password",
   "keyword": "And "
 });
 formatter.step({
-  "line": 7,
-  "name": "user verify the in the homepage",
+  "line": 15,
+  "name": "user verfiy the username in the homepage",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 9,
+  "line": 18,
   "name": "",
   "description": "",
   "id": "login-functionality-for-adactin-application;successfull-login-into-the-adactin-application-with-valid-credential;",
@@ -45,47 +51,157 @@ formatter.examples({
         "username",
         "password"
       ],
-      "line": 10,
+      "line": 19,
       "id": "login-functionality-for-adactin-application;successfull-login-into-the-adactin-application-with-valid-credential;;1"
+    },
+    {
+      "cells": [
+        "aarthyrajeev",
+        "test123"
+      ],
+      "line": 20,
+      "id": "login-functionality-for-adactin-application;successfull-login-into-the-adactin-application-with-valid-credential;;2"
     },
     {
       "cells": [
         "poojapriya",
         "test123"
       ],
-      "line": 11,
-      "id": "login-functionality-for-adactin-application;successfull-login-into-the-adactin-application-with-valid-credential;;2"
-    },
-    {
-      "cells": [
-        "anuamu041231",
-        "9003881823"
-      ],
-      "line": 12,
+      "line": 21,
       "id": "login-functionality-for-adactin-application;successfull-login-into-the-adactin-application-with-valid-credential;;3"
-    },
-    {
-      "cells": [
-        "anuamu04123",
-        "900388183"
-      ],
-      "line": 13,
-      "id": "login-functionality-for-adactin-application;successfull-login-into-the-adactin-application-with-valid-credential;;4"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 1944890,
+  "duration": 797327,
   "status": "passed"
 });
+formatter.background({
+  "line": 3,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 4,
+  "name": "user enter application url",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 5,
+  "name": "user enter \"poojapriya\" username",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 6,
+  "name": "user enter \"test123\"  password",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 7,
+  "name": "user verfiy the username in the homepage",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinition.user_enter_application_url()"
+});
+formatter.result({
+  "duration": 343942978,
+  "error_message": "java.lang.NullPointerException: null value in entry: url\u003dnull\r\n\tat com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.\u003cinit\u003e(SingletonImmutableBiMap.java:42)\r\n\tat com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)\r\n\tat com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat com.adactinbasclass.BaseClass.geturl(BaseClass.java:60)\r\n\tat com.adactin.stepdefinition.StepDefinition.user_enter_application_url(StepDefinition.java:20)\r\n\tat ✽.When user enter application url(AdactinLogin.feature:4)\r\n",
+  "status": "failed"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({
+  "location": "StepDefinition.user_verfiy_the_username_in_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
 formatter.scenario({
-  "line": 11,
+  "line": 20,
   "name": "Successfull login into the adactin application with valid credential",
   "description": "",
   "id": "login-functionality-for-adactin-application;successfull-login-into-the-adactin-application-with-valid-credential;;2",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 10,
+      "name": "@login"
+    }
+  ]
+});
+formatter.step({
+  "line": 12,
+  "name": "user enter application url",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 13,
+  "name": "user enter aarthyrajeev as a username",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 14,
+  "name": "user enter  test123 as a password",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "user verfiy the username in the homepage",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinition.user_enter_application_url()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "StepDefinition.user_enter_aarthyrajeev_as_a_username()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({
+  "location": "StepDefinition.user_verfiy_the_username_in_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 612837156,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 223226,
+  "status": "passed"
+});
+formatter.background({
+  "line": 3,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
 });
 formatter.step({
   "line": 4,
@@ -94,150 +210,115 @@ formatter.step({
 });
 formatter.step({
   "line": 5,
-  "name": "user enter \"poojapriya\" as username",
-  "matchedColumns": [
-    0
-  ],
+  "name": "user enter \"poojapriya\" username",
   "keyword": "And "
 });
 formatter.step({
   "line": 6,
-  "name": "user enter  \"test123\" as password",
-  "matchedColumns": [
-    1
-  ],
+  "name": "user enter \"test123\"  password",
   "keyword": "And "
 });
 formatter.step({
   "line": 7,
-  "name": "user verify the in the homepage",
+  "name": "user verfiy the username in the homepage",
   "keyword": "Then "
 });
 formatter.match({
   "location": "StepDefinition.user_enter_application_url()"
 });
 formatter.result({
-  "duration": 266303689,
-  "error_message": "java.lang.NullPointerException\r\n\tat com.adactinbasclass.BaseClass.geturl(BaseClass.java:60)\r\n\tat com.adactin.stepdefinition.StepDefinition.user_enter_application_url(StepDefinition.java:20)\r\n\tat ✽.When user enter application url(AdactinLogin.feature:4)\r\n",
+  "duration": 1202725,
+  "error_message": "java.lang.NullPointerException: null value in entry: url\u003dnull\r\n\tat com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.\u003cinit\u003e(SingletonImmutableBiMap.java:42)\r\n\tat com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)\r\n\tat com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat com.adactinbasclass.BaseClass.geturl(BaseClass.java:60)\r\n\tat com.adactin.stepdefinition.StepDefinition.user_enter_application_url(StepDefinition.java:20)\r\n\tat ✽.When user enter application url(AdactinLogin.feature:4)\r\n",
   "status": "failed"
 });
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
 formatter.match({
-  "arguments": [
-    {
-      "val": "poojapriya",
-      "offset": 12
-    }
-  ],
-  "location": "StepDefinition.user_enter_as_username(String)"
+  "location": "StepDefinition.user_verfiy_the_username_in_the_homepage()"
 });
 formatter.result({
   "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "test123",
-      "offset": 13
-    }
-  ],
-  "location": "StepDefinition.user_enter_as_password(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "StepDefinition.user_verify_the_in_the_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.before({
-  "duration": 651718,
-  "status": "passed"
 });
 formatter.scenario({
-  "line": 12,
+  "line": 21,
   "name": "Successfull login into the adactin application with valid credential",
   "description": "",
   "id": "login-functionality-for-adactin-application;successfull-login-into-the-adactin-application-with-valid-credential;;3",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 10,
+      "name": "@login"
+    }
+  ]
 });
 formatter.step({
-  "line": 4,
+  "line": 12,
   "name": "user enter application url",
   "keyword": "When "
 });
 formatter.step({
-  "line": 5,
-  "name": "user enter \"anuamu041231\" as username",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 6,
-  "name": "user enter  \"9003881823\" as password",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 7,
-  "name": "user verify the in the homepage",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinition.user_enter_application_url()"
-});
-formatter.result({
-  "duration": 704317,
-  "error_message": "java.lang.NullPointerException\r\n\tat com.adactinbasclass.BaseClass.geturl(BaseClass.java:60)\r\n\tat com.adactin.stepdefinition.StepDefinition.user_enter_application_url(StepDefinition.java:20)\r\n\tat ✽.When user enter application url(AdactinLogin.feature:4)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "anuamu041231",
-      "offset": 12
-    }
-  ],
-  "location": "StepDefinition.user_enter_as_username(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "9003881823",
-      "offset": 13
-    }
-  ],
-  "location": "StepDefinition.user_enter_as_password(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "StepDefinition.user_verify_the_in_the_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.before({
-  "duration": 976293,
-  "status": "passed"
-});
-formatter.scenario({
   "line": 13,
-  "name": "Successfull login into the adactin application with valid credential",
+  "name": "user enter poojapriya as a username",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 14,
+  "name": "user enter  test123 as a password",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "user verfiy the username in the homepage",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinition.user_enter_application_url()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({
+  "location": "StepDefinition.user_verfiy_the_username_in_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 623479514,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 202699,
+  "status": "passed"
+});
+formatter.background({
+  "line": 3,
+  "name": "",
   "description": "",
-  "id": "login-functionality-for-adactin-application;successfull-login-into-the-adactin-application-with-valid-credential;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
+  "type": "background",
+  "keyword": "Background"
 });
 formatter.step({
   "line": 4,
@@ -246,125 +327,97 @@ formatter.step({
 });
 formatter.step({
   "line": 5,
-  "name": "user enter \"anuamu04123\" as username",
-  "matchedColumns": [
-    0
-  ],
+  "name": "user enter \"poojapriya\" username",
   "keyword": "And "
 });
 formatter.step({
   "line": 6,
-  "name": "user enter  \"900388183\" as password",
-  "matchedColumns": [
-    1
-  ],
+  "name": "user enter \"test123\"  password",
   "keyword": "And "
 });
 formatter.step({
   "line": 7,
-  "name": "user verify the in the homepage",
+  "name": "user verfiy the username in the homepage",
   "keyword": "Then "
 });
 formatter.match({
   "location": "StepDefinition.user_enter_application_url()"
 });
 formatter.result({
-  "duration": 740880,
-  "error_message": "java.lang.NullPointerException\r\n\tat com.adactinbasclass.BaseClass.geturl(BaseClass.java:60)\r\n\tat com.adactin.stepdefinition.StepDefinition.user_enter_application_url(StepDefinition.java:20)\r\n\tat ✽.When user enter application url(AdactinLogin.feature:4)\r\n",
+  "duration": 1223252,
+  "error_message": "java.lang.NullPointerException: null value in entry: url\u003dnull\r\n\tat com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.\u003cinit\u003e(SingletonImmutableBiMap.java:42)\r\n\tat com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)\r\n\tat com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat com.adactinbasclass.BaseClass.geturl(BaseClass.java:60)\r\n\tat com.adactin.stepdefinition.StepDefinition.user_enter_application_url(StepDefinition.java:20)\r\n\tat ✽.When user enter application url(AdactinLogin.feature:4)\r\n",
   "status": "failed"
 });
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
 formatter.match({
-  "arguments": [
-    {
-      "val": "anuamu04123",
-      "offset": 12
-    }
-  ],
-  "location": "StepDefinition.user_enter_as_username(String)"
+  "location": "StepDefinition.user_verfiy_the_username_in_the_homepage()"
 });
 formatter.result({
   "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "900388183",
-      "offset": 13
-    }
-  ],
-  "location": "StepDefinition.user_enter_as_password(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "StepDefinition.user_verify_the_in_the_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.uri("AdactinSearchHotel.feature");
-formatter.feature({
-  "line": 1,
-  "name": "search functionality for adactin application",
-  "description": "",
-  "id": "search-functionality-for-adactin-application",
-  "keyword": "Feature"
-});
-formatter.before({
-  "duration": 300200,
-  "status": "passed"
 });
 formatter.scenario({
-  "line": 3,
+  "line": 24,
   "name": "Successfull search into the adactin application with valid credential",
   "description": "",
-  "id": "search-functionality-for-adactin-application;successfull-search-into-the-adactin-application-with-valid-credential",
+  "id": "login-functionality-for-adactin-application;successfull-search-into-the-adactin-application-with-valid-credential",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 23,
+      "name": "@searchhote1"
+    }
+  ]
 });
 formatter.step({
-  "line": 4,
+  "line": 25,
   "name": "user select location",
   "keyword": "When "
 });
 formatter.step({
-  "line": 5,
+  "line": 26,
   "name": "user select hotels",
   "keyword": "And "
 });
 formatter.step({
-  "line": 6,
+  "line": 27,
   "name": "user select RoomType",
   "keyword": "And "
 });
 formatter.step({
-  "line": 7,
+  "line": 28,
   "name": "user select numberofrooms",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 29,
   "name": "user select checkindate",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 30,
   "name": "user select checkoutdate",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 31,
   "name": "user Select adultsperroom",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 32,
   "name": "user select childrenperroom",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 33,
   "name": "user verify the serach in the loginpage",
   "keyword": "Then "
 });
@@ -372,9 +425,7 @@ formatter.match({
   "location": "stepDefinition1.user_select_location()"
 });
 formatter.result({
-  "duration": 82508370,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.getTagName(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.Select.\u003cinit\u003e(Select.java:45)\r\n\tat com.adactinbasclass.BaseClass.dropdown(BaseClass.java:64)\r\n\tat com.adactin.stepdefinition.stepDefinition1.user_select_location(stepDefinition1.java:13)\r\n\tat ✽.When user select location(AdactinSearchHotel.feature:4)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepDefinition1.user_select_hotels()"
@@ -424,33 +475,84 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
-formatter.uri("AdactinSelect.feature");
-formatter.feature({
-  "line": 1,
-  "name": "select functionality for adactin application",
-  "description": "",
-  "id": "select-functionality-for-adactin-application",
-  "keyword": "Feature"
-});
-formatter.before({
-  "duration": 481091,
+formatter.after({
+  "duration": 550883635,
   "status": "passed"
 });
-formatter.scenario({
+formatter.before({
+  "duration": 172551,
+  "status": "passed"
+});
+formatter.background({
   "line": 3,
-  "name": "Successfull select into the adactin application with valid credential",
+  "name": "",
   "description": "",
-  "id": "select-functionality-for-adactin-application;successfull-select-into-the-adactin-application-with-valid-credential",
-  "type": "scenario",
-  "keyword": "Scenario"
+  "type": "background",
+  "keyword": "Background"
 });
 formatter.step({
   "line": 4,
+  "name": "user enter application url",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 5,
+  "name": "user enter \"poojapriya\" username",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 6,
+  "name": "user enter \"test123\"  password",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 7,
+  "name": "user verfiy the username in the homepage",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinition.user_enter_application_url()"
+});
+formatter.result({
+  "duration": 1027609,
+  "error_message": "java.lang.NullPointerException: null value in entry: url\u003dnull\r\n\tat com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.\u003cinit\u003e(SingletonImmutableBiMap.java:42)\r\n\tat com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)\r\n\tat com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat com.adactinbasclass.BaseClass.geturl(BaseClass.java:60)\r\n\tat com.adactin.stepdefinition.StepDefinition.user_enter_application_url(StepDefinition.java:20)\r\n\tat ✽.When user enter application url(AdactinLogin.feature:4)\r\n",
+  "status": "failed"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({
+  "location": "StepDefinition.user_verfiy_the_username_in_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 36,
+  "name": "Successfull select into the adactin application with valid credential",
+  "description": "",
+  "id": "login-functionality-for-adactin-application;successfull-select-into-the-adactin-application-with-valid-credential",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 35,
+      "name": "@searchhotel2"
+    }
+  ]
+});
+formatter.step({
+  "line": 37,
   "name": "user select select",
   "keyword": "And "
 });
 formatter.step({
-  "line": 5,
+  "line": 38,
   "name": "user verify the select in the loginpage",
   "keyword": "Then "
 });
@@ -458,9 +560,7 @@ formatter.match({
   "location": "stepDefinition2.user_select_select()"
 });
 formatter.result({
-  "duration": 4628094,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.adactinbasclass.BaseClass.clickOnelemant(BaseClass.java:91)\r\n\tat com.adactin.stepdefinition.stepDefinition2.user_select_select(stepDefinition2.java:15)\r\n\tat ✽.And user select select(AdactinSelect.feature:4)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepDefinition2.user_verify_the_select_in_the_loginpage()"
@@ -468,78 +568,132 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
-formatter.uri("AdactinTPayment.feature");
-formatter.feature({
-  "line": 1,
-  "name": "BookHotelPage functionality for adactin application",
-  "description": "",
-  "id": "bookhotelpage-functionality-for-adactin-application",
-  "keyword": "Feature"
-});
-formatter.before({
-  "duration": 359856,
+formatter.after({
+  "duration": 526929829,
   "status": "passed"
 });
-formatter.scenario({
+formatter.before({
+  "duration": 181531,
+  "status": "passed"
+});
+formatter.background({
   "line": 3,
-  "name": "Successfull BookHotelPage into the adactin application with valid credential",
+  "name": "",
   "description": "",
-  "id": "bookhotelpage-functionality-for-adactin-application;successfull-bookhotelpage-into-the-adactin-application-with-valid-credential",
-  "type": "scenario",
-  "keyword": "Scenario"
+  "type": "background",
+  "keyword": "Background"
 });
 formatter.step({
   "line": 4,
-  "name": "user enter firstname",
+  "name": "user enter application url",
   "keyword": "When "
 });
 formatter.step({
   "line": 5,
-  "name": "user enter lastname",
+  "name": "user enter \"poojapriya\" username",
   "keyword": "And "
 });
 formatter.step({
   "line": 6,
-  "name": "user enter address",
+  "name": "user enter \"test123\"  password",
   "keyword": "And "
 });
 formatter.step({
   "line": 7,
+  "name": "user verfiy the username in the homepage",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinition.user_enter_application_url()"
+});
+formatter.result({
+  "duration": 1026326,
+  "error_message": "java.lang.NullPointerException: null value in entry: url\u003dnull\r\n\tat com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.\u003cinit\u003e(SingletonImmutableBiMap.java:42)\r\n\tat com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)\r\n\tat com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat com.adactinbasclass.BaseClass.geturl(BaseClass.java:60)\r\n\tat com.adactin.stepdefinition.StepDefinition.user_enter_application_url(StepDefinition.java:20)\r\n\tat ✽.When user enter application url(AdactinLogin.feature:4)\r\n",
+  "status": "failed"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({
+  "location": "StepDefinition.user_verfiy_the_username_in_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 41,
+  "name": "Successfull BookHotelPage into the adactin application with valid credential",
+  "description": "",
+  "id": "login-functionality-for-adactin-application;successfull-bookhotelpage-into-the-adactin-application-with-valid-credential",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 40,
+      "name": "@searchhotel3"
+    }
+  ]
+});
+formatter.step({
+  "line": 42,
+  "name": "user enter firstname",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 43,
+  "name": "user enter lastname",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 44,
+  "name": "user enter address",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 45,
   "name": "user enter creditcardno",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 46,
   "name": "user enter creditcardtype",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 47,
   "name": "user enter expirydate",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 48,
   "name": "user enter selectyear",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 49,
   "name": "user enter cvv no",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 50,
   "name": "user select the booknow",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 51,
+  "name": ":user enter logoutpage",
   "keyword": "Then "
 });
 formatter.match({
   "location": "stepDefinition3.user_enter_firstname()"
 });
 formatter.result({
-  "duration": 10259424,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.sendKeys(Unknown Source)\r\n\tat com.adactinbasclass.BaseClass.inputOnelement(BaseClass.java:86)\r\n\tat com.adactin.stepdefinition.stepDefinition3.user_enter_firstname(stepDefinition3.java:13)\r\n\tat ✽.When user enter firstname(AdactinTPayment.feature:4)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepDefinition3.user_enter_lastname()"
@@ -589,37 +743,14 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
-formatter.uri("AdactinULogout.feature");
-formatter.feature({
-  "line": 1,
-  "name": "LogoutPage functionality for adactin application",
-  "description": "",
-  "id": "logoutpage-functionality-for-adactin-application",
-  "keyword": "Feature"
-});
-formatter.before({
-  "duration": 464413,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 3,
-  "name": "Successfull LogoutPage into the adactin application with valid credential",
-  "description": "",
-  "id": "logoutpage-functionality-for-adactin-application;successfull-logoutpage-into-the-adactin-application-with-valid-credential",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 4,
-  "name": ":user enter logoutpage",
-  "keyword": "Then "
-});
 formatter.match({
   "location": "stepDefinition4.user_enter_logoutpage()"
 });
 formatter.result({
-  "duration": 1715891,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.adactinbasclass.BaseClass.clickOnelemant(BaseClass.java:91)\r\n\tat com.adactin.stepdefinition.stepDefinition4.user_enter_logoutpage(stepDefinition4.java:12)\r\n\tat ✽.Then :user enter logoutpage(AdactinULogout.feature:4)\r\n",
-  "status": "failed"
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 606679200,
+  "status": "passed"
 });
 });

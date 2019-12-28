@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 import com.adactin.helper.Filereadermanger;
+import com.adactinbasclass.BaseClass;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -28,7 +29,7 @@ public class Runner {
 	@BeforeClass
 	public static void setup() throws IOException {
 		String browsername = Filereadermanger.getInstance().getCrInstance().browsername();
-		System.out.println(browsername);
+		driver=BaseClass.browserLaunch(browsername);
 	}
 
 	public static void tearDown() {
