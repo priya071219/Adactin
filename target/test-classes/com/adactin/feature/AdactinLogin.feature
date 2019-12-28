@@ -2,16 +2,16 @@ Feature: Login functionality for adactin application
 
 Background:
 When user enter application url 
-And user enter "poojapriya" username
-And user enter "test123"  password
+And user enter "poojapriya" as username
+And user enter "test123" as password
 Then user verfiy the username in the homepage
 
 
 @login
 Scenario Outline: Successfull login into the adactin application with valid credential
 When user enter application url
-And user enter <username> as a username
-And user enter  <password> as a password
+And user enter "<username>" as username
+And user enter  "<password>" as password
 Then user verfiy the username in the homepage
 
 
